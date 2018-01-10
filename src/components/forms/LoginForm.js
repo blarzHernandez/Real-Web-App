@@ -30,7 +30,7 @@ class LoginForm extends React.Component{
         //update errors object in our state
         this.setState({errors});
 
-        if(Object.keys(errors).length === 0){
+        if(errors.length === 0){
             this.props.submit(this.state.data);
         }
     }
@@ -48,9 +48,9 @@ class LoginForm extends React.Component{
 
     //all the react component have a render function
     render(){
-        //destructoring state object
+        //destructuring state object
         const {data, errors} = this.state;
-        console.log(data);
+        
         return (
         <div>
             <Form onSubmit={this.onSubmit} >

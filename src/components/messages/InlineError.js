@@ -1,8 +1,12 @@
 import React from "react";
 import propTypes from "prop-types";
+import { Message } from "semantic-ui-react";
 
 const InlineError = ({text}) => (
-    <span style={{color:"#973A38"}} >{text}</span>
+    <Message negative>
+        <Message.Header>{text}</Message.Header>
+    </Message>
+   
 );
 
 InlineError.propTypes = {
