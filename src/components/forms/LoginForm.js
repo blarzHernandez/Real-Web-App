@@ -30,7 +30,8 @@ class LoginForm extends React.Component{
         //update errors object in our state
         this.setState({errors});
 
-        if(errors.length === 0){
+        if(Object.keys(errors).length === 0){
+            console.log(this.state.data);
             this.props.submit(this.state.data);
         }
     }

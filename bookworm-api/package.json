@@ -1,0 +1,17 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "express-api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^1.6.0",
+    "express": "^4.16.2"
+  }
+}

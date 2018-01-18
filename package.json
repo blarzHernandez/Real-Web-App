@@ -5,6 +5,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "and": "0.0.2",
+    "axios": "^0.17.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -34,5 +35,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint src"
-  }
+  },
+  "proxy":"http://localhost:9090/"
 }
